@@ -1,0 +1,135 @@
+{
+	"data": [
+		{
+			"__v": 0,
+			"_id": "67803f2b5ff643e5855e739c",
+			"access_restriction_data": 32,
+			"ambr": {
+				"downlink": {
+					"unit": 1,
+					"value": 500000000
+				},
+				"uplink": {
+					"unit": 1,
+					"value": 500000000
+				}
+			},
+			"imeisv": [],
+			"imsi": "001010000000001",
+			"mm_realm": [],
+			"mme_host": [],
+			"msisdn": [],
+			"network_access_mode": 0,
+			"operator_determined_barring": 0,
+			"purge_flag": [],
+			"schema_version": 1,
+			"security": {
+				"amf": "8000",
+				"k": "465B5CE8B199B49FAA5F0A2EE238A6BC",
+				"op": null,
+				"opc": "E8ED289DEBA952E4283B54E88E6183CA"
+			},
+			"slice": [
+				{
+					"_id": "67803f2b5ff643e5855e739e",
+					"default_indicator": true,
+					"sd": "FFFFFF",
+					"session": [
+						{
+							"_id": "67803f2b5ff643e5855e739d",
+							"ambr": {
+								"downlink": {
+									"unit": 0,
+									"value": 1000000000
+								},
+								"uplink": {
+									"unit": 0,
+									"value": 1000000000
+								}
+							},
+							"name": "default",
+							"pcc_rule": [],
+							"qos": {
+								"arp": {
+									"pre_emption_capability": 1,
+									"pre_emption_vulnerability": 2,
+									"priority_level": 8
+								},
+								"index": 9
+							},
+							"type": 3
+						}
+					],
+					"sst": 149
+				}
+			],
+			"subscribed_rau_tau_timer": 12,
+			"subscriber_status": 1
+		},
+		{
+			"__v": 0,
+			"_id": "67805be7143485b0c67adaa1",
+			"access_restriction_data": 32,
+			"ambr": {
+				"downlink": {
+					"unit": 3,
+					"value": 1
+				},
+				"uplink": {
+					"unit": 3,
+					"value": 1
+				}
+			},
+			"imeisv": [],
+			"imsi": "123456789",
+			"mme_host": [],
+			"mme_realm": [],
+			"msisdn": [],
+			"network_access_mode": 0,
+			"operator_determined_barring": 0,
+			"purge_flag": [],
+			"schema_version": 1,
+			"security": {
+				"amf": "8000",
+				"k": "465B5CE8 B199B49F AA5F0A2E E238A6BC",
+				"op": null,
+				"opc": "E8ED289D EBA952E4 283B54E8 8E6183CA"
+			},
+			"slice": [
+				{
+					"_id": "67805be7143485bcae7adaa2",
+					"default_indicator": true,
+					"session": [
+						{
+							"_id": "67805be71434850b5d7adaa3",
+							"ambr": {
+								"downlink": {
+									"unit": 3,
+									"value": 1
+								},
+								"uplink": {
+									"unit": 3,
+									"value": 1
+								}
+							},
+							"name": "internet",
+							"pcc_rule": [],
+							"qos": {
+								"arp": {
+									"pre_emption_capability": 1,
+									"pre_emption_vulnerability": 1,
+									"priority_level": 8
+								},
+								"index": 9
+							},
+							"type": 3
+						}
+					],
+					"sst": 1
+				}
+			],
+			"subscribed_rau_tau_timer": 12,
+			"subscriber_status": 0
+		}
+	]
+}

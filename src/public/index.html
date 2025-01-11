@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UE Slice Atualizado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #logs {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+      height: 300px;
+      overflow-y: scroll;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>Logs de Atualização de Slice</h1>
+  <div id="logs">Aguardando atualizações...</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js"></script>
+  <script>
+    const logsDiv = document.getElementById('logs');
+
+    // Conecta ao WebSocket do Flask
+    const socket = io('http://192.168.100.32:5000');
+
+    // Escuta mensagens de log do servidor
+    socket.on('log_message', (data) => {
+      const logMessage = data.log;
+      logsDiv.textContent += `${logMessage}\n`;
+      logsDiv.scrollTop = logsDiv.scrollHeight; // Rola automaticamente para o final
+    });
+  </script>
+</body>
+</html>
