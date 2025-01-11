@@ -1,0 +1,3 @@
+#COMANDO PARA INSTALAR TODAS AS DEPENDENCIAS DE UMA UNICA VEZ
+
+pip install -r requirements.txt
